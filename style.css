@@ -1,0 +1,169 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+}
+
+.main{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:12px;
+}
+
+.container{
+  width:100%;
+  height:100%;
+  border-radius:25px;
+  overflow:hidden;
+  display:flex;
+  position:relative;
+  background:#f5e8b9;
+}
+
+.left{
+  width:60%;
+  height:100%;
+  background:#ffcb05;
+  padding:40px 60px;
+  position:relative;
+}
+
+.logo{
+  width:130px;
+  margin-bottom:120px;
+}
+
+.sub{
+  letter-spacing:8px;
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+h1{
+  font-size:110px;
+  line-height:1;
+  font-weight:800;
+  margin-bottom:30px;
+}
+
+.desc{
+  width:420px;
+  font-size:20px;
+  line-height:1.8;
+  color:#222;
+  margin-bottom:40px;
+}
+
+.count{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-size:28px;
+  font-weight:600;
+}
+
+.line{
+  width:50px;
+  height:3px;
+  background:black;
+}
+
+.pokeball{
+  width:230px;
+  height:230px;
+  border:16px solid rgba(0,0,0,0.08);
+  border-radius:50%;
+  position:absolute;
+  bottom:-70px;
+  left:-40px;
+}
+
+.pokeball::before{
+  content:"";
+  width:100%;
+  height:16px;
+  background:rgba(0,0,0,0.08);
+  position:absolute;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+}
+
+.pokeball::after{
+  content:"";
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  border:16px solid rgba(0,0,0,0.08);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.right{
+  width:40%;
+  height:100%;
+  background:#f8efd3;
+  position:relative;
+}
+
+.menu{
+  position:absolute;
+  top:40px;
+  right:45px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  cursor:pointer;
+}
+
+.menu span{
+  width:38px;
+  height:4px;
+  background:#111;
+  border-radius:10px;
+}
+
+.dots{
+  position:absolute;
+  right:35px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.dots span{
+  width:12px;
+  height:12px;
+  background:#f1c40f;
+  border-radius:50%;
+  opacity:.7;
+}
+
+.dots span:first-child{
+  background:#111;
+  opacity:1;
+}
+
+.pikachu{
+  position:absolute;
+  width:650px;
+  right:190px;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:5;
+}
